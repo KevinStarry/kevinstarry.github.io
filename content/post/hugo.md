@@ -36,4 +36,7 @@ git push origin master:public 这里master和public之间不能有空格
 *******
 这样的目的是在GitHub项目中的master分支保存的是整个项目文件，而分支public则是作为页面展示。在GitHub Pages设置中将public设置为Page页面。 
 # 其他问题
-晚上睡觉的时候都还记得有几个问题，但是醒来就全忘了，那就这样吧。新电脑先把远程的master和public仓库拉取到本地，不然直接提交是会报错的。比较麻烦的地方是两个分支，一个是项目分支，一个是网站分支，每次提交都比较麻烦。
+晚上睡觉的时候都还记得有几个问题，但是醒来就全忘了，那就这样吧。新电脑先把远程的master和public仓库拉取到本地，不然直接提交是会报错的。 因为每次提交都很麻烦，所以写了一组命令，在quickstart目录下:
+```
+hugo && git add . && git commit -m "." && git push  &&  cd public/ && git add . && git commit -m "." && git push origin master:public
+```
