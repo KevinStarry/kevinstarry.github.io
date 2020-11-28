@@ -1,6 +1,6 @@
 baseURL = "https://kevinstarry.github.io"
 languageCode = "en"
-DefaultContentLanguage = "zh-cn"
+DefaultContentLanguage = "en"
 title = ""
 theme = "anatole"
 summarylength = 10
