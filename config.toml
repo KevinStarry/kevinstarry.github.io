@@ -72,3 +72,9 @@ url = "mailto:2552712328@qq.com"
   weight = 300
   identifier = "about"
   url = "/about/"
+
+  [[menu.main]]
+  name = "其他"
+  weight = 400
+  identifier = "others"
+  url = "/others/"
