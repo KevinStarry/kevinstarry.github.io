@@ -9,8 +9,6 @@ Tags: [
 Categories: []
 DisableComments: false
 ---
-
-# 前言
 极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。<!--more--> 网上教程很多，但是对于一个概念都没有树立的人来说，有些显而易见的东西实际上对于没有概念的人而言就有些难了。  
 在参考<https://gohugo.io/getting-started/quick-start/>官方教程进行创建中卡在了主题部分，虽然现在也不确定是不是像我这样子使用，但是至少我应该算是摸到了些门路。[主题的链接](https://themes.gohugo.io/theme/anatole/)。
 # Hugo配置使用
