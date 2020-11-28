@@ -56,19 +56,19 @@ url = "mailto:2552712328@qq.com"
 [menu]
 
   [[menu.main]]
-  name = "Home"
+  name = "家"
   identifier = "home"
   weight = 100
   url = "/"
 
   [[menu.main]]
-  name = "Posts"
+  name = "文章"
   weight = 200
   identifier = "posts"
   url = "/post/"
 
   [[menu.main]]
-  name = "About"
+  name = "关于"
   weight = 300
   identifier = "about"
   url = "/about/"
