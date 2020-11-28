@@ -75,3 +75,9 @@ url = "mailto:2552712328@qq.com"
   identifier = "about"
   url = "/about/"
 
+  [[menu.main]]
+  name = "资源"
+  weight = 400
+  identifier = "resources"
+  url = "/resources/"
+

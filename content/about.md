@@ -2,10 +2,10 @@
 title = "关于"
 description = ""
 date = "2020-11-27"
-aliases = ["about-us", "about-hugo", "contact"]
+aliases = []
 author = "Hugo Authors"
 +++
 
-从最初的Wordpress，CMS，Typecho，到GoogleBlogger，再到如今的Hexo，Hugo。时代在改变，属于个人博客的那个年代早已经远去。本来是没有打算利用Github建立博客的，没有一个合适的域名，累了，折腾不动了。
+从最初的Wordpress，CMS，Typecho，到GoogleBlogger，再到如今的Hexo，Hugo。时代在改变，属于个人博客的那个年代早已经远去。本来是没有打算利用Github建立博客的，但没有一个合适的域名。
   
 建立的目的不过是为了方便自己，记录下自己的学习笔记，希望能够帮助到有需要的人。本来CSDN和简书掘金等平台是足够的，但是寄人篱下总是不够自在。
