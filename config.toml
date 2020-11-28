@@ -1,7 +1,7 @@
 baseURL = "https://kevinstarry.github.io"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh-cn"
-title = "Website of KevinStarry"
+title = ""
 theme = "anatole"
 summarylength = 10
 enableEmoji = true
@@ -14,9 +14,9 @@ enableRobotsTXT = true
 #googleAnalytics = "UA-123-45"
 
 [params]
-title = "I'm KevinStarry"
+title = "悠然时光，愿爱长存"
 author = "KevinStarry"
-description = "Call me Kevin"
+description = "林"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
