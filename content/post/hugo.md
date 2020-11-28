@@ -20,7 +20,7 @@ DisableComments: false
 在quickstart目录下  
 git init  
 git remote add origin git@github.com:KevinStarry/kevinstarry.github.io.git  
-git add -A
+git add -A   
 git commit -m "."  
 git push -u origin master  
 命令形式：git push <远程主机名> <本地分支名>:<远程分支名> 。解释说明：1.将本地仓库的文件推送到远程分支 2.如果远程仓库没有这个分支，会新建一个同名的远程分支。3.如果省略远程分支名，则表示两者同名。 git push origin master:master   
@@ -32,4 +32,5 @@ git add -A
 git commit -m "."   
 git push origin master:public   
 *******
-这样的目的是在GitHub项目中的master分支保存的是整个项目文件，而分支public则是作为页面展示。在GitHub Pages设置中将public设置为Page页面。
+这样的目的是在GitHub项目中的master分支保存的是整个项目文件，而分支public则是作为页面展示。在GitHub Pages设置中将public设置为Page页面。 
+# 其他问题
