@@ -1,13 +1,19 @@
 ---
 title: "hugo"
 date: 2020-11-27T22:16:02+08:00
-Description: ""
-Tags: []
-Categories: []
+Description: "初识Hugo"
+Tags: [
+    "markdown",
+    "text",
+]
+Categories: ["artical"]
 DisableComments: false
 ---
+
 # 前言
-极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，在找了一圈之后才发现了hugo。网上教程很多，但是对于一个概念都没有树立的人来说，有些显而易见的东西实际上对于没有概念的人而言就有些难了。  
+极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。
+<!--more-->
+网上教程很多，但是对于一个概念都没有树立的人来说，有些显而易见的东西实际上对于没有概念的人而言就有些难了。  
 参考<https://gohugo.io/getting-started/quick-start/>的教程进行创建，但是在应用主题上就出现了问题，虽然现在也不确定是不是像我这样子使用，但是至少我应该算是摸到了些门路。
 # Hugo配置使用
 1. Windows10系统，在GitHub，Hugo项目上直接下载Hugo.zip压缩包，里面只有一个hugo.exe，剩下的两个文件没有用到。我把hugo.exe的目录添加到了系统环境变量path中，以方便power shell 终端使用。  
