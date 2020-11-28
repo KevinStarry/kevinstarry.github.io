@@ -1,6 +1,6 @@
 baseURL = "https://kevinstarry.github.io"
 languageCode = "zh-cn"
-DefaultContentLanguage = "zh-cn"
+DefaultContentLanguage = "en"
 hasCJKLanguage = true
 enableGitInfo = true  
 title = ""
