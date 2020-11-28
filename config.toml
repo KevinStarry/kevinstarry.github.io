@@ -18,7 +18,7 @@ title = "悠然时光，愿爱长存"
 author = "KevinStarry"
 description = "林"
 profilePicture = "images/profile.jpg"
-keywords = ""
+keywords = "博客"
 favicon = "favicons/"
 customCss = []
 customJs = []
@@ -56,7 +56,7 @@ url = "mailto:2552712328@qq.com"
 [menu]
 
   [[menu.main]]
-  name = "家"
+  name = "首页"
   identifier = "home"
   weight = 100
   url = "/"
