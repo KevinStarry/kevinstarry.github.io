@@ -1,5 +1,5 @@
 ---
-title: "Git"
+title: "git"
 date: 2020-11-28T14:02:23+08:00
 Description: ""
 Tags: ["git"]
