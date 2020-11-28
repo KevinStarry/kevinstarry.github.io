@@ -9,7 +9,7 @@ DisableComments: false
 看了很多人的Git教程，但是学习还是要多实践，多敲几次命令，才能真正掌握。<!--more-->git的命令繁多，取其中比较高频使用的记录下。  
 
 1. git init 
-2. git remote add origin git@github.com:KevinStarry/kevinstarry.github.io.git 添加远程仓库地址
+2. ```git remote add origin git@github.com:KevinStarry/kevinstarry.github.io.git``` 添加远程仓库地址
 3. ```git pull <remote> <branch>``` 拉取远程仓库某个分支到本地，如：git pull origin master。拉取远程仓库的master到本地。等同于fetch + merge 命令：git fetch origin branchName，git merge origin/branchName。
 4. ```git push <远程主机名> <本地分支名>:<远程分支名>``` 推送到远程，如：git push origin master:master。推送本地master到远程master。如果省略远程分支名，表示本地分支名与远程分支同名。如果省略本地分支名如：git push origin :master，则表示删除远程分支master，因为这表示推送本地空分支给远程。  
 5. git push -u origin master 建立当前分支和远程分支的追踪关系。关系建立后可以直接使用 git push 推送到远程。
