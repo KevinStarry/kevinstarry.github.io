@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>https://kevinstarry.github.io/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Nov 2020 22:19:38 +0800</lastBuildDate><atom:link href="https://kevinstarry.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>google_blogger</title>
+      <link>https://kevinstarry.github.io/post/google_blogger/</link>
+      <pubDate>Sat, 28 Nov 2020 22:19:38 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/google_blogger/</guid>
+      <description>&lt;p&gt;一些关于Google Blogger的学习心得&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo</title>
+      <link>https://kevinstarry.github.io/post/hexo/</link>
+      <pubDate>Sat, 28 Nov 2020 22:11:47 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/hexo/</guid>
+      <description>&lt;p&gt;GithubPage+Hexo搭建个人博客:(windows)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://kevinstarry.github.io/post/git/</link>
+      <pubDate>Sat, 28 Nov 2020 14:02:23 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/git/</guid>
+      <description>&lt;p&gt;看了很多人的Git教程，但是学习还是要多实践，多敲几次命令，才能真正掌握。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>终端代理</title>
+      <link>https://kevinstarry.github.io/post/%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Sat, 28 Nov 2020 12:34:05 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86/</guid>
+      <description>&lt;p&gt;临时的终端代理，窗口关闭后即结束&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://kevinstarry.github.io/post/hugo/</link>
+      <pubDate>Fri, 27 Nov 2020 22:16:02 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/hugo/</guid>
+      <description>&lt;p&gt;极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
