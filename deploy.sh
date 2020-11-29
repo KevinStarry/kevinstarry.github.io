@@ -1,5 +1,7 @@
 #!/usr/bin/bash
-# 注释部分
+echo "显示工作目录和暂存区的状态"
+git status
+echo "==============================="
 read -p "输入本次提交的注释:" commit
 if [ ! -n "$commit" ]; then
 commit="."
