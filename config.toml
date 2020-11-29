@@ -1,0 +1,83 @@
+baseURL = "https://kevinstarry.github.io"
+languageCode = "zh-cn"
+DefaultContentLanguage = "en"
+hasCJKLanguage = true
+enableGitInfo = true  
+title = ""
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+[params]
+title = "悠然时光，愿爱长存"
+author = "KevinStarry"
+description = "林"
+profilePicture = "images/profile.jpg"
+keywords = "博客"
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ["post"]
+images = ["images/site-feature-image.png"]
+# Google Site Verification
+#googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/kevinstarry"
+
+[[params.socialIcons]]
+icon = "fab fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:2552712328@qq.com"
+
+## Menu items
+
+[menu]
+
+  [[menu.main]]
+  name = "首页"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "文章"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "关于"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+  [[menu.main]]
+  name = "资源"
+  weight = 400
+  identifier = "resources"
+  url = "/resources/"
+
