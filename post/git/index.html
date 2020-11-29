@@ -139,6 +139,7 @@
 <li>git init</li>
 <li><code>git remote add origin git@github.com:KevinStarry/kevinstarry.github.io.git</code> 添加远程仓库地址</li>
 <li><code>git pull &lt;remote&gt; &lt;branch&gt;</code> 拉取远程仓库某个分支到本地，如：git pull origin master。拉取远程仓库的master到本地。等同于fetch + merge 命令：git fetch origin branchName，git merge origin/branchName。</li>
+<li>git pull origin master &ndash;allow-unrelated-histories。允许不相关的合并，手动解决冲突。</li>
 <li><code>git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</code> 推送到远程，如：git push origin master:master。推送本地master到远程master。如果省略远程分支名，表示本地分支名与远程分支同名。如果省略本地分支名如：git push origin :master，则表示删除远程分支master，因为这表示推送本地空分支给远程。</li>
 <li>git push -u origin master 建立当前分支和远程分支的追踪关系。关系建立后可以直接使用 git push 推送到远程。</li>
 <li>git push -f origin 强制推送到远程，慎用，将本地文件直接推送到远程。</li>
