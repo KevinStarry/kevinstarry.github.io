@@ -5,7 +5,7 @@ hasCJKLanguage = true
 enableGitInfo = true  
 title = ""
 theme = "anatole"
-summarylength = 10
+summarylength = 20
 enableEmoji = true
 enableRobotsTXT = true
 
