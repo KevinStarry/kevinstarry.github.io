@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> KevinStarry | hexo </title>
+    <title> KevinStarry | 教程 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,9 +21,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://kevinstarry.github.io/post/hexo/">
+    <link rel="canonical" href="https://kevinstarry.github.io/categories/%E6%95%99%E7%A8%8B/">
 
     
+    <link rel="alternate" type="application/rss+xml" href="https://kevinstarry.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" title="" />
     
     
     
@@ -34,8 +35,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="hexo"/>
-<meta name="twitter:description" content="GithubPage&#43;Hexo搭建个人博客:(windows)"/>
+<meta name="twitter:title" content="教程"/>
+<meta name="twitter:description" content="心念所往之，则万千无惧"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -118,74 +119,46 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="post animated fadeInDown">
-        <div class="post-content">
-
-            <div class="post-title">
-                <h3>hexo</h3>
-                
-                    <div class="info">
-                        <em class="fas fa-calendar-day"></em>
-                        <span class="date">Sat, Nov 28, 2020</span>
-                        <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">3-minute read</span>
-                    </div>
-                
-            </div>
-
-            <p>GithubPage+Hexo搭建个人博客:(windows)</p>
-<p><a href="https://hexo.io/">https://hexo.io/</a><br>
-<a href="https://www.cnblogs.com/shwee/p/11421156.html">https://www.cnblogs.com/shwee/p/11421156.html</a></p>
-<ol>
-<li>
-<p>注册Github账号.安装 Nodejs 和 Git (国内两个都用淘宝镜像速度快).Hexo 基于 Nodejs.下载 Nodejs 和 Git 程序并安装(注意Add to Path)，一路点 “下一步” 按默认配置完成安装。安装完成后，Win+R 输入 cmd 并打开.依次输入 node -v;npm -v ;和 git &ndash;version; 并回车,出现版本号即安装成功.</p>
-</li>
-<li>
-<p>执行命令: npm install -g hexo-cli (安装hexo) ;echo &lsquo;PATH=&quot;$PATH:./node_modules/.bin&quot;&rsquo; &raquo; ~/.profile (添加node_modules到环境中);hexo init blog (初始化);cd blog ; nmp install (命令运行后会有 _config.yml 网站配置文件)</p>
-</li>
-<li>
-<p>本地预览:hexo server启动服务器,地址栏输入localhost:4000.</p>
-</li>
-<li>
-<p>更改npm配置文件：npm config set registry URL  换国内源如http://registry.npm.taobao.org ,加速访问.</p>
-</li>
-<li>
-<p>在Github中建立新仓库,仓库名为:用户名.github.io(固定写法).用户名为创建账户的用户名.如kevinstarry.github.io. 在Git bash中配置个人信息 git config &ndash;global user.name &ldquo;你的GitHub用户名&rdquo; ;git config &ndash;global user.email &ldquo;你的GitHub注册邮箱&rdquo; ;git config &ndash;list(查看是否生效);</p>
-</li>
-<li>
-<p>(生成密钥) ssh-keygen -t rsa -C &ldquo;youremail&rdquo; (期间一路回车);系统会提示生成了ssh.正常应该是在用户目录.ssh文件夹下有id_rsa和id_rsa.pub.将公钥上传到github的密钥管理中.私钥放在电脑上.部署完密钥后,就再Git bash中输入:ssh -T <a href="mailto:git@github.com">git@github.com</a>;ssh连接GitHub.会提示连接成功.</p>
-</li>
-<li>
-<p>最后部署到GitHub:找到之前说的_config.yml文件,打开并找到deploy项目,照下面格式写.yml语法严格:号后面有空格;repo:后面为项目地址链接最好用ssh链接不要用https协议.
-deploy:
-type: git
-repo: <a href="https://github.com/kevinstarry/kevinstarry.github.io">https://github.com/kevinstarry/kevinstarry.github.io</a>
-branch: master</p>
-</li>
-<li>
-<p>npm install hexo-deployer-git &ndash;save(安装部署);hexo clean;hexo generate;hexo deploy(清缓存,生成,部署到GitHub,都可以缩写如:hexo d);部署的时候可能需要输入你的GitHub用户名(邮箱地址)和密码.</p>
-</li>
-</ol>
-<p>提高:https://www.cnblogs.com/shwee/p/11421156.html (不错的文章)</p>
-<p>写文章:在博客根目录下右键打开git bash，安装一个扩展npm i hexo-deployer-git。然后输入hexo new post &ldquo;article title&quot;或者hexo n &ldquo;博客名字&rdquo;，新建一篇文章。然后打开_posts的目录，可以发现下面多了一个文件夹和一个.md文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。你可以会直接在vscode里面编写markdown文件，可以实时预览，也可以用用其他编辑md文件的软件的工具编写。编写完markdown文件后，根目录下输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。这时打开你的github.io主页就能看到发布的文章啦。</p>
-<p>Error:<br>
-1.nodejs安装失败.  以管理员身份运行cmd命令,在cmd窗口输入下载的node.js安装包所在位置（例：msiexec /package D：\node-v8.11.3-x64.msi）</p>
-<p>2.npm命令无效.手动安装npm (下载npm 的安装包,解压到nodejs下面的node_modules)windows应该在C:\Program Files\Nodejs,配置npm 的环境变量.</p>
-<p>3.hexo命令无效,请在Git bash中使用,能Git bash的都在Git bash中使用.</p>
-        </div>
-        <div class="post-footer">
-            <div class="info">
-                
-                <span class="separator"><a class="tag" href="/tags/hexo/">hexo</a></span>
-
-            </div>
-        </div>
-
-        
+    <div class="archive animated fadeInDown">
+        <ul class="list-with-title">
             
-        
+                <div class="listing-title">2020</div>
+                
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="https://kevinstarry.github.io/post/google_blogger/" title="google_blogger">google_blogger</a>
+                                <div class="post-time"><span class="date">Nov 28</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="https://kevinstarry.github.io/post/git/" title="git">git</a>
+                                <div class="post-time"><span class="date">Nov 28</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="https://kevinstarry.github.io/post/%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86/" title="终端代理">终端代理</a>
+                                <div class="post-time"><span class="date">Nov 28</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="https://kevinstarry.github.io/post/hugo/" title="hugo">hugo</a>
+                                <div class="post-time"><span class="date">Nov 27</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                
+            
+        </ul>
     </div>
-
 
         </div>
     </div>
