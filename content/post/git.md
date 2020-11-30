@@ -3,7 +3,7 @@ title: "git"
 date: 2020-11-28T14:02:23+08:00
 Description: ""
 Tags: ["git"]
-Categories: []
+Categories: ["教程"]
 DisableComments: false
 ---
 看了很多人的Git教程，但是学习还是要多实践，多敲几次命令，才能真正掌握。<!--more-->git的命令繁多，取其中比较高频使用的记录下。  
