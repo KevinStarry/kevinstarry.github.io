@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> KevinStarry | V2ray配置 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="心念所往之，则万千无惧">
+    
+    <link rel="stylesheet"
+          href="https://kevinstarry.github.io/css/style.min.ae4af30f6a89627b05def70e914c14cbb53a71d28a88ec8d87a40ecc7c2778e2.css"
+          integrity="sha256-rkrzD2qJYnsF3vcOkUwUy7U6cdKKiOyNh6QOzHwneOI="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://kevinstarry.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kevinstarry.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://kevinstarry.github.io/post/v2ray%E9%85%8D%E7%BD%AE/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://kevinstarry.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="V2ray配置"/>
+<meta name="twitter:description" content="v2ray网站伪装的一些关键性配置文件示"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://kevinstarry.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">悠然时光，愿爱长存</a></h3>
+            <div class="description">
+                <p>心念所往之，则万千无惧</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/kevinstarry" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:2552712328@qq.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; KevinStarry 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">首页</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">文章</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">关于</a></li>
+        
+            
+            <li><a 
+                   href="/resources/"
+                        
+                   title="">资源</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>V2ray配置</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Wed, Dec 9, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">3-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>v2ray网站伪装的一些关键性配置文件示例</p>
+<p>之所以记录下这些来，目的是为了如果万一脚本无法使用的时候，可以自己手动配置，不过概率应该不高，记录下来做个参考，里面的域名隐私信息都已近清楚了，当然其他的一些配置也可能需要手动修改，如用UUID生成器生成自己的ID，而location/afe99760/ 主要用于重定向，不能用来处理正常的请求，应该是随便写一个，但是保证一致性即可。</p>
+<p>首先是三个路径:</p>
+<ol>
+<li>/etc/nginx/conf/conf.d/v2ray.conf 这个路径下的文件是nginx服务器伪装配置，称为文件1。</li>
+<li>/etc/v2ray/config.json 这个是v2ray服务器端的文件地址，称为文件2。</li>
+<li>D:\Program Files\v2rayN-Core\config.json 本地文件配置地址，称为文件3。</li>
+</ol>
+<p>直接展示三个文件的内容：</p>
+<p>文件1 nginx</p>
+<pre><code>    server {
+	listen 443 ssl http2;
+        ssl_certificate       /data/v2ray.crt;
+        ssl_certificate_key   /data/v2ray.key;
+        ssl_protocols         TLSv1.3;
+        ssl_ciphers           TLS13-AES-256-GCM-SHA384:TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-128-GCM-SHA256:TLS13-AES-128-CCM-8-SHA256:TLS13-AES-128-CCM-SHA256:EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
+	server_name example.com; #此处改为伪装域名地址
+        index index.html index.htm;
+        root  /home/wwwroot/3DCEList;
+        error_page 400 = /400.html;
+	location /afe99760/
+        {
+        proxy_redirect off;
+	proxy_pass http://127.0.0.1:25792;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &quot;upgrade&quot;;
+        proxy_set_header Host $http_host;
+        }
+}
+    server {
+        listen 80;
+	server_name example.com; #此处改为伪装域名地址
+	return 301 https://example.com$request_uri; #此处改为伪装域名地址
+    }
+
+</code></pre><p>文件2 服务器端</p>
+<pre><code>{
+  &quot;log&quot;: {
+        &quot;access&quot;: &quot;/var/log/v2ray/access.log&quot;,
+        &quot;error&quot;: &quot;/var/log/v2ray/error.log&quot;,
+        &quot;loglevel&quot;: &quot;warning&quot;
+    },
+  &quot;inbounds&quot;: [
+    {
+    &quot;port&quot;:25792,
+      &quot;listen&quot;: &quot;127.0.0.1&quot;, 
+      &quot;tag&quot;: &quot;vmess-in&quot;, 
+      &quot;protocol&quot;: &quot;vmess&quot;, 
+      &quot;settings&quot;: {
+        &quot;clients&quot;: [
+          {
+	  &quot;id&quot;:&quot;33e0f314-8589-4a7f-9524-f2e9af3beb54&quot;,
+	  &quot;alterId&quot;:4
+          }
+        ]
+      }, 
+      &quot;streamSettings&quot;: {
+        &quot;network&quot;: &quot;ws&quot;, 
+        &quot;wsSettings&quot;: {
+	  &quot;path&quot;:&quot;/afe99760/&quot;
+        }
+      }
+    }
+  ], 
+  &quot;outbounds&quot;: [
+    {
+      &quot;protocol&quot;: &quot;freedom&quot;, 
+      &quot;settings&quot;: { }, 
+      &quot;tag&quot;: &quot;direct&quot;
+    }, 
+    {
+      &quot;protocol&quot;: &quot;blackhole&quot;, 
+      &quot;settings&quot;: { }, 
+      &quot;tag&quot;: &quot;blocked&quot;
+    }
+  ], 
+  &quot;dns&quot;: {
+    &quot;servers&quot;: [
+      &quot;https+local://1.1.1.1/dns-query&quot;,
+	  &quot;1.1.1.1&quot;,
+	  &quot;1.0.0.1&quot;,
+	  &quot;8.8.8.8&quot;,
+	  &quot;8.8.4.4&quot;,
+	  &quot;localhost&quot;
+    ]
+  },
+  &quot;routing&quot;: {
+    &quot;domainStrategy&quot;: &quot;AsIs&quot;,
+    &quot;rules&quot;: [
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;inboundTag&quot;: [
+          &quot;vmess-in&quot;
+        ],
+        &quot;outboundTag&quot;: &quot;direct&quot;
+      }
+    ]
+  }
+}
+</code></pre><p>文件3 本地配置</p>
+<pre><code>{
+  &quot;policy&quot;: {
+    &quot;system&quot;: {
+      &quot;statsInboundUplink&quot;: true,
+      &quot;statsInboundDownlink&quot;: true
+    }
+  },
+  &quot;log&quot;: {
+    &quot;access&quot;: &quot;&quot;,
+    &quot;error&quot;: &quot;&quot;,
+    &quot;loglevel&quot;: &quot;warning&quot;
+  },
+  &quot;inbounds&quot;: [
+    {
+      &quot;tag&quot;: &quot;proxy&quot;,
+      &quot;port&quot;: 10808,
+      &quot;listen&quot;: &quot;0.0.0.0&quot;,
+      &quot;protocol&quot;: &quot;socks&quot;,
+      &quot;sniffing&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;destOverride&quot;: [
+          &quot;http&quot;,
+          &quot;tls&quot;
+        ]
+      },
+      &quot;settings&quot;: {
+        &quot;auth&quot;: &quot;noauth&quot;,
+        &quot;udp&quot;: true,
+        &quot;ip&quot;: null,
+        &quot;address&quot;: null,
+        &quot;clients&quot;: null,
+        &quot;decryption&quot;: null
+      },
+      &quot;streamSettings&quot;: null
+    },
+    {
+      &quot;tag&quot;: &quot;api&quot;,
+      &quot;port&quot;: 9211,
+      &quot;listen&quot;: &quot;127.0.0.1&quot;,
+      &quot;protocol&quot;: &quot;dokodemo-door&quot;,
+      &quot;sniffing&quot;: null,
+      &quot;settings&quot;: {
+        &quot;auth&quot;: null,
+        &quot;udp&quot;: false,
+        &quot;ip&quot;: null,
+        &quot;address&quot;: &quot;127.0.0.1&quot;,
+        &quot;clients&quot;: null,
+        &quot;decryption&quot;: null
+      },
+      &quot;streamSettings&quot;: null
+    }
+  ],
+  &quot;outbounds&quot;: [
+    {
+      &quot;tag&quot;: &quot;proxy&quot;,
+      &quot;protocol&quot;: &quot;vmess&quot;,
+      &quot;settings&quot;: {
+        &quot;vnext&quot;: [
+          {
+            &quot;address&quot;: &quot;example.com&quot;, #此处改为伪装域名地址
+            &quot;port&quot;: 443,
+            &quot;users&quot;: [
+              {
+                &quot;id&quot;: &quot;33e0f314-8589-4a7f-9524-f2e9af3beb54&quot;,
+                &quot;alterId&quot;: 4,
+                &quot;email&quot;: &quot;t@t.tt&quot;,
+                &quot;security&quot;: &quot;auto&quot;,
+                &quot;encryption&quot;: null,
+                &quot;flow&quot;: null
+              }
+            ]
+          }
+        ],
+        &quot;servers&quot;: null,
+        &quot;response&quot;: null
+      },
+      &quot;streamSettings&quot;: {
+        &quot;network&quot;: &quot;ws&quot;,
+        &quot;security&quot;: &quot;tls&quot;,
+        &quot;tlsSettings&quot;: {
+          &quot;allowInsecure&quot;: false,
+          &quot;serverName&quot;: &quot;example.com&quot; #此处改为伪装域名地址
+        },
+        &quot;tcpSettings&quot;: null,
+        &quot;kcpSettings&quot;: null,
+        &quot;wsSettings&quot;: {
+          &quot;connectionReuse&quot;: true,
+          &quot;path&quot;: &quot;/afe99760/&quot;,
+          &quot;headers&quot;: {
+            &quot;Host&quot;: &quot;example.com&quot; #此处改为伪装域名地址
+          }
+        },
+        &quot;httpSettings&quot;: null,
+        &quot;quicSettings&quot;: null,
+        &quot;xtlsSettings&quot;: null
+      },
+      &quot;mux&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;concurrency&quot;: -1
+      }
+    },
+    {
+      &quot;tag&quot;: &quot;direct&quot;,
+      &quot;protocol&quot;: &quot;freedom&quot;,
+      &quot;settings&quot;: {
+        &quot;vnext&quot;: null,
+        &quot;servers&quot;: null,
+        &quot;response&quot;: null
+      },
+      &quot;streamSettings&quot;: null,
+      &quot;mux&quot;: null
+    },
+    {
+      &quot;tag&quot;: &quot;block&quot;,
+      &quot;protocol&quot;: &quot;blackhole&quot;,
+      &quot;settings&quot;: {
+        &quot;vnext&quot;: null,
+        &quot;servers&quot;: null,
+        &quot;response&quot;: {
+          &quot;type&quot;: &quot;http&quot;
+        }
+      },
+      &quot;streamSettings&quot;: null,
+      &quot;mux&quot;: null
+    }
+  ],
+  &quot;stats&quot;: {},
+  &quot;api&quot;: {
+    &quot;tag&quot;: &quot;api&quot;,
+    &quot;services&quot;: [
+      &quot;StatsService&quot;
+    ]
+  },
+  &quot;dns&quot;: null,
+  &quot;routing&quot;: {
+    &quot;domainStrategy&quot;: &quot;IPIfNonMatch&quot;,
+    &quot;rules&quot;: [
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: [
+          &quot;api&quot;
+        ],
+        &quot;outboundTag&quot;: &quot;api&quot;,
+        &quot;ip&quot;: null,
+        &quot;domain&quot;: null
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;proxy&quot;,
+        &quot;ip&quot;: null,
+        &quot;domain&quot;: [
+          &quot;geosite:google&quot;,
+          &quot;geosite:github&quot;,
+          &quot;geosite:netflix&quot;,
+          &quot;geosite:steam&quot;,
+          &quot;geosite:telegram&quot;,
+          &quot;geosite:tumblr&quot;,
+          &quot;geosite:speedtest&quot;,
+          &quot;geosite:bbc&quot;,
+          &quot;domain:gvt1.com&quot;,
+          &quot;domain:textnow.com&quot;,
+          &quot;domain:twitch.tv&quot;,
+          &quot;domain:wikileaks.org&quot;,
+          &quot;domain:naver.com&quot;,
+          &quot;domain:twitter.com&quot;,
+          &quot;domain:onedrive.live.com&quot;
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;proxy&quot;,
+        &quot;ip&quot;: [
+          &quot;91.108.4.0/22&quot;,
+          &quot;91.108.8.0/22&quot;,
+          &quot;91.108.12.0/22&quot;,
+          &quot;91.108.20.0/22&quot;,
+          &quot;91.108.36.0/23&quot;,
+          &quot;91.108.38.0/23&quot;,
+          &quot;91.108.56.0/22&quot;,
+          &quot;149.154.160.0/20&quot;,
+          &quot;149.154.164.0/22&quot;,
+          &quot;149.154.172.0/22&quot;,
+          &quot;74.125.0.0/16&quot;,
+          &quot;173.194.0.0/16&quot;,
+          &quot;172.217.0.0/16&quot;,
+          &quot;216.58.200.0/24&quot;,
+          &quot;216.58.220.0/24&quot;,
+          &quot;91.108.56.116&quot;,
+          &quot;91.108.56.0/24&quot;,
+          &quot;109.239.140.0/24&quot;,
+          &quot;149.154.167.0/24&quot;,
+          &quot;149.154.175.0/24&quot;
+        ],
+        &quot;domain&quot;: null
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;direct&quot;,
+        &quot;ip&quot;: null,
+        &quot;domain&quot;: [
+          &quot;domain:12306.com&quot;,
+          &quot;domain:51ym.me&quot;,
+          &quot;domain:52pojie.cn&quot;,
+          &quot;domain:8686c.com&quot;,
+          &quot;domain:abercrombie.com&quot;,
+          &quot;domain:adobesc.com&quot;,
+          &quot;domain:air-matters.com&quot;,
+          &quot;domain:air-matters.io&quot;,
+          &quot;domain:airtable.com&quot;,
+          &quot;domain:akadns.net&quot;,
+          &quot;domain:apache.org&quot;,
+          &quot;domain:api.crisp.chat&quot;,
+          &quot;domain:api.termius.com&quot;,
+          &quot;domain:appshike.com&quot;,
+          &quot;domain:appstore.com&quot;,
+          &quot;domain:aweme.snssdk.com&quot;,
+          &quot;domain:bababian.com&quot;,
+          &quot;domain:battle.net&quot;,
+          &quot;domain:beatsbydre.com&quot;,
+          &quot;domain:bet365.com&quot;,
+          &quot;domain:bilibili.cn&quot;,
+          &quot;domain:ccgslb.com&quot;,
+          &quot;domain:ccgslb.net&quot;,
+          &quot;domain:chunbo.com&quot;,
+          &quot;domain:chunboimg.com&quot;,
+          &quot;domain:clashroyaleapp.com&quot;,
+          &quot;domain:cloudsigma.com&quot;,
+          &quot;domain:cloudxns.net&quot;,
+          &quot;domain:cmfu.com&quot;,
+          &quot;domain:culturedcode.com&quot;,
+          &quot;domain:dct-cloud.com&quot;,
+          &quot;domain:didialift.com&quot;,
+          &quot;domain:douyutv.com&quot;,
+          &quot;domain:duokan.com&quot;,
+          &quot;domain:dytt8.net&quot;,
+          &quot;domain:easou.com&quot;,
+          &quot;domain:ecitic.net&quot;,
+          &quot;domain:eclipse.org&quot;,
+          &quot;domain:eudic.net&quot;,
+          &quot;domain:ewqcxz.com&quot;,
+          &quot;domain:fir.im&quot;,
+          &quot;domain:frdic.com&quot;,
+          &quot;domain:fresh-ideas.cc&quot;,
+          &quot;domain:godic.net&quot;,
+          &quot;domain:goodread.com&quot;,
+          &quot;domain:haibian.com&quot;,
+          &quot;domain:hdslb.net&quot;,
+          &quot;domain:hollisterco.com&quot;,
+          &quot;domain:hongxiu.com&quot;,
+          &quot;domain:hxcdn.net&quot;,
+          &quot;domain:images.unsplash.com&quot;,
+          &quot;domain:img4me.com&quot;,
+          &quot;domain:ipify.org&quot;,
+          &quot;domain:ixdzs.com&quot;,
+          &quot;domain:jd.hk&quot;,
+          &quot;domain:jianshuapi.com&quot;,
+          &quot;domain:jomodns.com&quot;,
+          &quot;domain:jsboxbbs.com&quot;,
+          &quot;domain:knewone.com&quot;,
+          &quot;domain:kuaidi100.com&quot;,
+          &quot;domain:lemicp.com&quot;,
+          &quot;domain:letvcloud.com&quot;,
+          &quot;domain:lizhi.io&quot;,
+          &quot;domain:localizecdn.com&quot;,
+          &quot;domain:lucifr.com&quot;,
+          &quot;domain:luoo.net&quot;,
+          &quot;domain:mai.tn&quot;,
+          &quot;domain:maven.org&quot;,
+          &quot;domain:miwifi.com&quot;,
+          &quot;domain:moji.com&quot;,
+          &quot;domain:moke.com&quot;,
+          &quot;domain:mtalk.google.com&quot;,
+          &quot;domain:mxhichina.com&quot;,
+          &quot;domain:myqcloud.com&quot;,
+          &quot;domain:myunlu.com&quot;,
+          &quot;domain:netease.com&quot;,
+          &quot;domain:nfoservers.com&quot;,
+          &quot;domain:nssurge.com&quot;,
+          &quot;domain:nuomi.com&quot;,
+          &quot;domain:ourdvs.com&quot;,
+          &quot;domain:overcast.fm&quot;,
+          &quot;domain:paypal.com&quot;,
+          &quot;domain:paypalobjects.com&quot;,
+          &quot;domain:pgyer.com&quot;,
+          &quot;domain:qdaily.com&quot;,
+          &quot;domain:qdmm.com&quot;,
+          &quot;domain:qin.io&quot;,
+          &quot;domain:qingmang.me&quot;,
+          &quot;domain:qingmang.mobi&quot;,
+          &quot;domain:qqurl.com&quot;,
+          &quot;domain:rarbg.to&quot;,
+          &quot;domain:rrmj.tv&quot;,
+          &quot;domain:ruguoapp.com&quot;,
+          &quot;domain:sm.ms&quot;,
+          &quot;domain:snwx.com&quot;,
+          &quot;domain:soku.com&quot;,
+          &quot;domain:startssl.com&quot;,
+          &quot;domain:store.steampowered.com&quot;,
+          &quot;domain:symcd.com&quot;,
+          &quot;domain:teamviewer.com&quot;,
+          &quot;domain:tmzvps.com&quot;,
+          &quot;domain:trello.com&quot;,
+          &quot;domain:trellocdn.com&quot;,
+          &quot;domain:ttmeiju.com&quot;,
+          &quot;domain:udache.com&quot;,
+          &quot;domain:uxengine.net&quot;,
+          &quot;domain:weather.bjango.com&quot;,
+          &quot;domain:weather.com&quot;,
+          &quot;domain:webqxs.com&quot;,
+          &quot;domain:weico.cc&quot;,
+          &quot;domain:wenku8.net&quot;,
+          &quot;domain:werewolf.53site.com&quot;,
+          &quot;domain:windowsupdate.com&quot;,
+          &quot;domain:wkcdn.com&quot;,
+          &quot;domain:workflowy.com&quot;,
+          &quot;domain:xdrig.com&quot;,
+          &quot;domain:xiaojukeji.com&quot;,
+          &quot;domain:xiaomi.net&quot;,
+          &quot;domain:xiaomicp.com&quot;,
+          &quot;domain:ximalaya.com&quot;,
+          &quot;domain:xitek.com&quot;,
+          &quot;domain:xmcdn.com&quot;,
+          &quot;domain:xslb.net&quot;,
+          &quot;domain:xteko.com&quot;,
+          &quot;domain:yach.me&quot;,
+          &quot;domain:yixia.com&quot;,
+          &quot;domain:yunjiasu-cdn.net&quot;,
+          &quot;domain:zealer.com&quot;,
+          &quot;domain:zgslb.net&quot;,
+          &quot;domain:zimuzu.tv&quot;,
+          &quot;domain:zmz002.com&quot;,
+          &quot;domain:samsungdm.com&quot;,
+          &quot;domain:spotify.com&quot;
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;block&quot;,
+        &quot;ip&quot;: null,
+        &quot;domain&quot;: [
+          &quot;geosite:category-ads-all&quot;
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;direct&quot;,
+        &quot;ip&quot;: [
+          &quot;geoip:private&quot;
+        ],
+        &quot;domain&quot;: null
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;direct&quot;,
+        &quot;ip&quot;: [
+          &quot;geoip:cn&quot;
+        ],
+        &quot;domain&quot;: null
+      },
+      {
+        &quot;type&quot;: &quot;field&quot;,
+        &quot;port&quot;: null,
+        &quot;inboundTag&quot;: null,
+        &quot;outboundTag&quot;: &quot;direct&quot;,
+        &quot;ip&quot;: null,
+        &quot;domain&quot;: [
+          &quot;geosite:cn&quot;
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
