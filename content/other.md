@@ -1,5 +1,5 @@
 +++
-title = "其他"
+title = ""
 description = ""
 date = "2020-11-27"
 aliases = []
