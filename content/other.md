@@ -1,7 +1,9 @@
----
-title: "Other"
-date: 2020-12-14T21:42:08+08:00
-draft: true
----
++++
+title = "其他"
+description = ""
+date = "2020-11-27"
+aliases = []
+author = "Hugo Authors"
++++
 
 遇见你的第一天，上帝就在我耳边悄悄说了四个字：在劫难逃。
