@@ -3,7 +3,7 @@
 git clone git@github.com:KevinStarry/kevinstarry.github.io.git ./
 ```
 
-> /init.sh 初始化脚本  
+> ./init.sh 初始化脚本  
 > 
 > ./write.sh 写文章脚本
 > 
