@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> KevinStarry | hugo </title>
+    <title> KevinStarry | 浅吟低唱 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://kevinstarry.github.io/post/hugo/">
+    <link rel="canonical" href="https://kevinstarry.github.io/emotion/%E6%B5%85%E5%90%9F%E4%BD%8E%E5%94%B1/">
 
     
     
@@ -34,8 +34,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="hugo"/>
-<meta name="twitter:description" content="初识Hugo"/>
+<meta name="twitter:title" content="浅吟低唱"/>
+<meta name="twitter:description" content="览万千文章，总有那么一两句能让你怦然心动"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -128,60 +128,31 @@
         <div class="post-content">
 
             <div class="post-title">
-                <h3>hugo</h3>
-                
-                    <div class="info">
-                        <em class="fas fa-calendar-day"></em>
-                        <span class="date">Fri, Nov 27, 2020</span>
-                        <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">3-minute read</span>
-                    </div>
+                <h3>浅吟低唱</h3>
                 
             </div>
 
-            <p>极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。</p>
-<p>网上教程很多，但是对于一个概念都没有树立的人来说，有些显而易见的东西实际上对于没有概念的人而言就有些难了。<br>
-在参考<a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a>官方教程进行创建中卡在了主题部分，虽然现在也不确定是不是像我这样子使用，但是至少我应该算是摸到了些门路。<a href="https://themes.gohugo.io/theme/anatole/">主题的链接</a>。</p>
-<h1 id="hugo配置使用">Hugo配置使用</h1>
-<ol>
-<li>Windows10系统，在GitHub，Hugo项目上直接下载Hugo.zip压缩包，里面只有一个hugo.exe，剩下的两个文件没有用到。我把hugo.exe的目录添加到了系统环境变量path中，以方便power shell 终端使用。</li>
-<li>hugo new site quickstart。在Git Bash窗口下执行这个命令就会在当前路径下生成一个quickstart文件夹，里面包含很多空文件夹，也就是目录结构。其中有一个themes（主题）文件夹。在这个文件夹下，去hugo官网主题下找喜欢的主题，拷贝到目录下即可。一般在该主题文件中会有exampleSite文件夹。我的做法是把这个文件夹里的文件全部复制到quickstart目录下，覆盖原来的文件夹。</li>
-<li>hugo。主题找好以后回到quickstart目录下，执行hugo，这时候会生成一个public文件夹。这个文件夹就是我们要放到GitHub上的展示页面的，换句话说，quickstart文件夹是整个项目，而public文件夹下则是生成的静态文件，也就是我们的网站。</li>
-<li>hugo new post/first-post.md。在quickstart目录下，执行命令，这个命令会在content文件夹下的post文件夹下创建一个first-post.md文件，这就是创建文件的方式了，如果该主题的content文件夹下是posts目录那么命令自然也就改为hugo new posts/first-post.md。</li>
-</ol>
-<h1 id="git的频繁使用">Git的频繁使用</h1>
-<p>在整个学习探索使用的过程中，频繁的使用到的Git命令。
-在quickstart目录下<br>
-git init<br>
-git remote add origin <a href="mailto:git@github.com">git@github.com</a>:KevinStarry/kevinstarry.github.io.git<br>
-git add -A   这是旧的命令，新版本的Git可以使用git add .这种方式使用。
-git commit -m &ldquo;.&rdquo;<br>
-git push -u origin master<br>
-命令形式：git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt; 。解释说明：1.将本地仓库的文件推送到远程分支 2.如果远程仓库没有这个分支，会新建一个同名的远程分支。3.如果省略远程分支名，则表示两者同名。 git push origin master:master</p>
-<hr>
-<p>在生成的public目录下
-git init<br>
-git remote add origin <a href="mailto:git@github.com">git@github.com</a>:KevinStarry/kevinstarry.github.io.git <br>
-git add -A<br>
-git commit -m &ldquo;.&rdquo;<br>
-git push origin master:public 这里master和public之间不能有空格<br>
-这样的目的是在GitHub项目中的master分支保存的是整个项目文件，而分支public则是作为页面展示。在GitHub Pages设置中将public设置为Page页面。</p>
-<h1 id="其他问题">其他问题</h1>
-<p>晚上睡觉的时候都还记得有几个问题，但是醒来就全忘了，那就这样吧。新电脑先把远程的master和public仓库拉取到本地，不然直接提交是会报错的。 因为每次提交都很麻烦，所以写了一组命令，在quickstart目录下写了一个deploy.sh的脚本，内容如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo <span style="color:#f92672">&amp;&amp;</span> git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">&amp;&amp;</span> git push  <span style="color:#f92672">&amp;&amp;</span>  cd public/ <span style="color:#f92672">&amp;&amp;</span> git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">&amp;&amp;</span> git push origin master:public
-</code></pre></div>
+            <p>览万千文章，总有那么一两句能让你怦然心动。大千世界，总有些文字能够触及到灵魂深处，抚平心中的倦怠。</p>
+<p>春宵一刻值千金，花有清香月有阴。在良辰美景下，与自然融为一体，从电子产品的世界里抽身出来，感受真实的世界，品味人生。</p>
+<p>每天沉迷在游戏，影视，小说的世界里，一旦抽身离开，便倍感空虚。身体也变得异常的疲惫，像是迷失在海里的船，漂泊了很久，没有方向，没有目的。</p>
+<p>以前觉得如果每天都可以吃饭睡觉打游戏，什么事都不干，那可真的是一件极其惬意的事情。可是在无尽的游戏中，找不到游戏的意义，机械性的动作让人变得麻木，忘记自我，停不下来。这，似乎不是想要的生活。连续几个礼拜的放纵，让眼睛变得有些疼痛。</p>
+<p>温暖的句子总有治愈人心的力量</p>
+<blockquote>
+<p>如果觉得身边的一切都太不如意，那就去见喜欢的人，做喜欢的事，买喜欢的东西。</p>
+<p>喜欢那些闪光的东西，比如冬天的雪花、天上的星星、你的眼睛。</p>
+<p>如果你赶不上凌晨五点的日出，你不妨看看傍晚六点的タ阳。我的意思是：你可以选择后者。</p>
+<p>世界上所有的惊喜和好运，都是你累积的温柔和善良。</p>
+<p>人一生会碰到许多心动的人，可能误以为那是喜欢，其实也不过是某一刻好感，毕竟心动不是答案，心定才是。</p>
+</blockquote>
+
         </div>
         <div class="post-footer">
             <div class="info">
-                <span class="separator"><a class="category" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span>
-
-                <span class="separator"><a class="tag" href="/tags/markdown/">markdown</a><a class="tag" href="/tags/hugo/">hugo</a></span>
-
+                
+                
             </div>
         </div>
 
-        
-            
         
     </div>
 
