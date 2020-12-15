@@ -24,7 +24,7 @@ keywords = "博客"
 favicon = "favicons/"
 customCss = []
 customJs = []
-mainSections = ["post"]
+mainSections = ["post","emotion"]
 images = ["images/site-feature-image.png"]
 # Google Site Verification
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -64,22 +64,22 @@ url = "mailto:2552712328@qq.com"
   url = "/"
 
   [[menu.main]]
-  name = "文章"
+  name = "教程学习"
   weight = 20
   identifier = "posts"
   url = "/post/"
 
   [[menu.main]]
-  name = "关于"
+  name = "情绪感悟"
   weight = 30
-  identifier = "about"
-  url = "/about/"
+  identifier = "emotion"
+  url = "/emotion/"
 
   [[menu.main]]
-  name = "资源"
+  name = "关于"
   weight = 40
-  identifier = "resources"
-  url = "/resources/"
+  identifier = "about"
+  url = "/about/"
 
   [[menu.main]]
   name = "其他"

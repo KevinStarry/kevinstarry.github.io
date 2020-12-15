@@ -5,6 +5,7 @@ date = "2020-11-27"
 aliases = []
 author = "Hugo Authors"
 +++
+Windows10_Hugo_资源：<https://wws.lanzous.com/b01tr1nyb>。  
 
 遇见你的第一天，上帝就在我耳边悄悄说了四个字：在劫难逃。
 
