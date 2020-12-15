@@ -2,8 +2,8 @@
 title: "Nginx反向代理"
 date: 2020-11-30T16:23:52+08:00
 Description: ""
-Tags: ["转载"]
-Categories: ["教程"]
+Tags: []
+Categories: []
 DisableComments: false
 ---
 

@@ -2,7 +2,7 @@
 title: "hexo"
 date: 2020-11-28T22:11:47+08:00
 Description: ""
-Tags: ["hexo"]
+Tags: []
 Categories: []
 DisableComments: false
 ---

@@ -1,12 +1,9 @@
 ---
 title: "hugo"
 date: 2020-11-27T22:16:02+08:00
-Description: "初识Hugo"
-Tags: [
-    "markdown",
-    "hugo",
-]
-Categories: ["教程"]
+Description: ""
+Tags: []
+Categories: []
 DisableComments: false
 ---
 极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。<!--more--> 网上教程很多，但是对于一个概念都没有树立的人来说，有些显而易见的东西实际上对于没有概念的人而言就有些难了。  

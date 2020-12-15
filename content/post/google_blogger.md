@@ -2,8 +2,8 @@
 title: "google_blogger"
 date: 2020-11-28T22:19:38+08:00
 Description: ""
-Tags: ["google blogger"]
-Categories: ["教程"]
+Tags: []
+Categories: []
 DisableComments: false
 ---
 一些关于Google Blogger的学习心得<!--more-->  

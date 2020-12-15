@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 git status
-# 如果注释为空则默认为.
+
 read -p "输入本次提交的注释:" commit
 if [ ! -n "$commit" ]; then
-commit="."
+    commit="."
 fi
 echo "==============================="
 hugo  && git add .  && git commit -m "$commit"  && git push
