@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> KevinStarry | Scrapy </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="心念所往之，则万千无惧">
+    
+    <link rel="stylesheet"
+          href="https://kevinstarry.github.io/css/style.min.ae4af30f6a89627b05def70e914c14cbb53a71d28a88ec8d87a40ecc7c2778e2.css"
+          integrity="sha256-rkrzD2qJYnsF3vcOkUwUy7U6cdKKiOyNh6QOzHwneOI="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://kevinstarry.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kevinstarry.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://kevinstarry.github.io/post/scrapy/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://kevinstarry.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Scrapy"/>
+<meta name="twitter:description" content="Scrapy创建项目: scrapy startproject ScrpyDirection cd ScrapyDirection scrapy genspider -t crawl"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://kevinstarry.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">悠然时光，愿爱长存</a></h3>
+            <div class="description">
+                <p>心念所往之，则万千无惧</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/kevinstarry" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:2552712328@qq.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; KevinStarry 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">首页</a></li>
+        
+            
+            <li><a 
+                   href="/emotion/"
+                        
+                   title="">情感</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">学习</a></li>
+        
+            
+            <li><a 
+                   href="/other/"
+                        
+                   title="">其他</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Scrapy</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sat, Dec 19, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">4-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>Scrapy创建项目:</p>
+<pre><code>    scrapy startproject ScrpyDirection
+    cd ScrapyDirection
+    scrapy genspider -t crawl myspider www.baidu.com #创建全站爬虫,这种创建方式下myspider.py文件中已近包含items.py直接用就好了
+    scrapy genspider myspider www.baidu.com #创建 一般/普通 爬虫
+</code></pre><p>Scrapy快速启动:(创建start.py文件)</p>
+<pre><code>    os.system('cls') # 终端清屏
+    os.chdir( r&quot;D:\SpiderDirection&quot;)
+    os.system(&quot;scrapy crawl YourSpiderName&quot;)
+    os.system(&quot;scrapy crawl YourSpiderName -s JOBDIR=Remain/001&quot;) # 提高改进
+</code></pre><p>Scrapy数据抽取写法:</p>
+<pre><code>    //*[@class=&quot;title&quot;]//text() 提取class=title标签下的所有文本
+    ./div[id=&quot;mainn&quot;]  即xpath提取了一个xpath路径，然后继续往下提取文本，拼接xpath时使用，一般没必要.
+    //a/@href 提取所有a标签的href属性
+    item['domain_id'] = response.xpath('//input[@id=&quot;sid&quot;]/@value').get()
+    item['name'] = response.xpath('//div[@id=&quot;name&quot;]').get()
+    item['description'] = response.xpath('//div[@id=&quot;description&quot;]').get()
+    contain=''.join(contain).strip() #list变成str
+    response.content.decode('utf-8');response.encoding;(一个是手动解码,一个是自动解码)
+    dic1={&quot;name&quot;:&quot;youran&quot;,&quot;num&quot;:&quot;170423&quot;};dict2=dict(name=&quot;youran&quot;,num=&quot;170423&quot;).字典的两种创建方式.
+</code></pre><p>数据持久化部分:</p>
+<pre><code>    with open(&quot;allowed_domains.txt&quot;, 'a+',encoding='utf-8') as f:
+        f.write(m_str)  
+    r = requests.get(url)
+    with open(&quot;file.zip&quot;,&quot;wb&quot;) as f:
+        f.write(r.content)
+
+    #jsonVersion1.0
+    from scrapy.exporters import JsonLinesItemExporter
+    class QidianPipeline(object):
+        def __init__(self):
+            self.fp=open('qidian.json','wb')
+            self.exporter=JsonLinesItemExporter(self.fp,ensure_ascii=False,encoding='utf-8')
+        def process_item(self, item, spider):
+            self.exporter.export_item(item)
+            return item  #这里要注意最好是return item，因为如果pipelines中写了几个，必须返回给其他pipeline使用
+        def close_spider(self,spider):
+            self.fp.close()
+
+    #jsonVersion2.0(官方示例写法)
+    import json
+    class QidianPipeline(object):
+        def __init__(self):
+            self.fp=open('qidian.json','w',encoding='utf-8')
+        def process_item(self, item, spider):
+            line = json.dumps(item,ensure_ascii=False) + &quot;\n&quot;
+            self.fp.write(line)
+            return item
+        def close_spider(self,spider):
+            self.fp.close()  
+
+    #保存为txt
+    class TextPipeline(object):
+        def __init__(self):
+            pass
+        def process_item(self, item, spider):
+            with open(&quot;a.txt&quot;,&quot;a&quot;,encoding=&quot;utf-8&quot;) as f:
+                title=item['title']
+                contain=item['contain']
+                f.write(title+'\n'+contain+'\n')
+            return item
+</code></pre><p>About items.py: 这部分可以自己写,items本质就是字典,写个字典将数据传给pipeline处理也是一样的.<br>
+举例：name = scrapy.Field()</p>
+<pre><code>About settings.py 
+    ROBOTSTXT_OBEY = False #不遵守爬虫协议，改False，默认True
+    # 默认注释, 取消之, 并增加user-agent:
+    DEFAULT_REQUEST_HEADERS = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en',
+    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    }
+
+    ITEM_PIPELINES = {
+    'qidian.pipelines.TextPipeline': 300,#开启这一项，yield item 数据才会进入pipelines，需要pipeline处理数据就开启，
+    'qidian.pipelines.JsonPipeline': 400,#数字越小越先执行,如果这里开了多个pipelines，那么pipelines文件中必须也含有这些所有的
+    }
+    DOWNLOAD_DELAY = 2 #下载延时, 支持浮点数据.
+    DOWNLOAD_TIMEOUT = 15  # 下载超时
+    RETRY_ENABLED = True # 尝试次数
+    RETRY_TIMES = 3
+    DEPTH_LIMIT= 3 # 设置爬取深度
+</code></pre><p>进阶部分:
+为了避免爬取过程异常退出而导致重新爬取采取如下措施:项目目录下要有Remain文件夹.命令:scrapy crawl  &lt;爬虫名&gt;  -s JOBDIR=Remain/001;继续运行:scrapy crawl &lt;爬虫名&gt;  -s JOBDIR=remain/001 .备注:需要重新爬取就换个文件如002就行了.&lt;os.system(&ldquo;scrapy crawl myspider -s JOBDIR=Remain/001&rdquo;)&gt;.<br>
+Scrapy爬虫以项目目录为基准目录.即scrapy startproject ScrpyDirection,所以相对路径也是基于该目录.<br>
+allowed_domains = [&lsquo;www.baidu.com&rsquo;] #允许域影响yield则注释掉,这个对全站爬虫Rules部分有影响,建议注释掉.<br>
+yield scrapy.Request(next_url,callback=self.parse,dont_filter=True)#普通爬虫才用这个把下个爬取链接给调度器,dont_filter=True如果缺少将不会跟进爬取，就是只爬一次，不继续往下爬.<br>
+yield item #item必须是字典<br>
+pipelines这个组件数据持久化貌似是数据全部爬取完毕再一次性写入,这个问题很大.应该一边爬取一边写入才合理.<br>
+item=QidianItem(book_name=book_name,book_intro=book_intro).使用items.py.<br>
+start_urls:全站爬虫可以指定多个初始url.</p>
+<p>其他代码:</p>
+<p>如果不存在该文件夹则创建</p>
+<pre><code>import os 
+main_path=&quot;./Image&quot; 
+if  not os.path.exists(main_path):
+    os.makedirs(main_path)
+</code></pre><p>全站爬虫rules部分解析</p>
+<pre><code>rules = (
+        Rule(LinkExtractor(allow=&quot;&lt;正则表达式,当然,还可以写deny(禁止)的规则&gt;&quot;),follow=True),
+        Rule(LinkExtractor(allow=&quot;.+book\.qidian\.com/info/\d*&quot;), callback='parse_detail', follow=False),
+        #follow=True是指如果页面含有符合allow正则的链接就继续提取到调度器
+        #callback=parse_item,系统默认的.警告:parse_item这个方法不能复写,这是因为scrapy框架决定,建议注释掉或删掉(最好放着别管).
+    )
+</code></pre><p>利用PIL库下载图片,更漂亮的写法.</p>
+<pre><code> def down_image_b(self,url):
+        import requests
+        from PIL import Image
+        from io import BytesIO
+        main_path=&quot;./image&quot;
+        if  not os.path.exists(main_path):
+            os.makedirs(main_path)
+        response = requests.get(url)
+        image = Image.open(BytesIO(response.content))
+        image.save('./image/f.jpg')
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
