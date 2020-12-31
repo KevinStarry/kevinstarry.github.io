@@ -6,7 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 26 Dec 2020 13:34:15 +0800</lastBuildDate><atom:link href="https://kevinstarry.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 14:40:32 +0800</lastBuildDate><atom:link href="https://kevinstarry.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LNMP手动配置</title>
+      <link>https://kevinstarry.github.io/post/lnmp%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 31 Dec 2020 14:40:32 +0800</pubDate>
+      
+      <guid>https://kevinstarry.github.io/post/lnmp%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>lsb_release -a 查看当前Linux系统版本信息lsb</description>
+    </item>
+    
     <item>
       <title>读书笔记</title>
       <link>https://kevinstarry.github.io/emotion/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>

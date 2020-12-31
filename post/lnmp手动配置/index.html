@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> KevinStarry | LNMP手动配置 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="心念所往之，则万千无惧">
+    
+    <link rel="stylesheet"
+          href="https://kevinstarry.github.io/css/style.min.ae4af30f6a89627b05def70e914c14cbb53a71d28a88ec8d87a40ecc7c2778e2.css"
+          integrity="sha256-rkrzD2qJYnsF3vcOkUwUy7U6cdKKiOyNh6QOzHwneOI="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://kevinstarry.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kevinstarry.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://kevinstarry.github.io/post/lnmp%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://kevinstarry.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="LNMP手动配置"/>
+<meta name="twitter:description" content="lsb_release -a 查看当前Linux系统版本信息lsb"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://kevinstarry.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">悠然时光，愿爱长存</a></h3>
+            <div class="description">
+                <p>心念所往之，则万千无惧</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/kevinstarry" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:2552712328@qq.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; KevinStarry 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">首页</a></li>
+        
+            
+            <li><a 
+                   href="/emotion/"
+                        
+                   title="">情感</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">学习</a></li>
+        
+            
+            <li><a 
+                   href="/other/"
+                        
+                   title="">其他</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>LNMP手动配置</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Thu, Dec 31, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p><code>lsb_release -a </code>查看当前Linux系统版本信息<code>lsb_release -d</code>更清楚看到是哪个发行版。如果lsb_release命令找不到，就执行<code> yum install redhat-lsb -y</code></p>
+<p>当前系统版本信息： CentOS Linux release 7.9.2009 (Core)</p>
+<h1 id="nginx">nginx</h1>
+<p><code>yum install nginx</code> 如果没有安装包就添加仓库 <code>yum install epel-release</code>，如果这是您第一次从 EPEL 仓库中安装软件，yum 可能会提示您导入 EPEL GPG key。遇到这种情况，输入 y，然后 Enter（回车） 即可继续安装。</p>
+<p><code>systemctl enable nginx</code>设置开启启动，<code>find / -name &quot;nginx.conf</code>，<code>locate nginx.conf</code> 两种方式查找nginx.conf配置文件位置。</p>
+<p>启动nginx<code>systemctl start nginx</code> 出现无法绑定错误nginx: [emerg] still could not bind() ，解决方法killall -9 nginx，关闭占用端口的服务，这里是nginx占用。</p>
+<h1 id="php">php</h1>
+<p>添加php Webtatic yum源</p>
+<pre><code>CentOS6:
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+-------------------------------------------------------------------------
+CentOS7:
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+安装php7.0
+yum -y install php70w-fpm 
+启动php两种方式
+systemctl start php-fpm.service
+systemctl enable php-fpm.service
+查看php版本
+php-fpm -v
+</code></pre><h1 id="mariadb">mariadb</h1>
+<pre><code>yum install mariadb mariadb-server
+systemctl start mariadb   #启动mariadb
+systemctl enable mariadb  #设置开机自启动
+mysql_secure_installation #设置root密码等相关
+mysql -uroot -p           #测试登录
+----------------------------------------------------
+CREATE DATABASE databasename;
+GRANT ALL PRIVILEGES ON databasename.* TO &quot;wordpressusername&quot;@&quot;hostname&quot; IDENTIFIED BY &quot;password&quot;;
+FLUSH PRIVILEGES
+示例：  
+create database test;
+grant all on test.* to 'root'@'%' indentified by 'root'
+flush privileges
+</code></pre><h1 id="其他">其他</h1>
+<p>赋权限 chmod 777 -R wwwroot</p>
+<p>对于PHP7.1  <br>
+yum-config-manager &ndash;enable remi-php71<br>
+yum -y install php php-opcache<br>
+添加PHP常用扩展：<br>
+yum -y install php-mysql php-gd php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-soap curl curl-devel<br>
+对于Nginx: <br>
+yum -y install nginx nginx-mod-http-perl nginx-mod-stream nginx-filesystem nginx-mod-mail nginx-mod-http-image-filter nginx-all-modules nginx-mod-http-geoip  nginx-mod-http-xslt-filter</p>
+<p>nginx.conf文件配置</p>
+<p>在server里面添加网站目录 root /home/wwwroot</p>
+<p>添加php配置</p>
+<pre><code> location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        }
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
