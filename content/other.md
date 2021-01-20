@@ -9,7 +9,9 @@ author = "Hugo Authors"
 
 在这个互联网孤岛相遇，是一种不可多得的缘分 [朋友的网站](https://jueding.top/)
 
-Windows10_Hugo_资源：<https://wws.lanzous.com/b01tr1nyb>  
+Windows10_Hugo_资源：<https://wws.lanzous.com/b01tr1nyb>    
+WordPress5.6源码(.tar.gz [tar -xzvf]) <https://kevinstarry.lanzous.com/b01tu58ih>   
+
 
 遇见你的第一天，上帝就在我耳边悄悄说了四个字：在劫难逃
 
