@@ -5,12 +5,12 @@ read aritcal
 echo "文章类型：1.技术教程 2.个人情绪"
 read type
 if [ ! -n "$type" ];then
-    type="post"
+    type="tech"
 fi
 if ((${type}=="2"));then
     type="emotion"
 else
-    type="post"
+    type="tech"
 fi
 
 if [ -n "$aritcal" ]
