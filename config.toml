@@ -24,7 +24,7 @@ keywords = "博客"
 favicon = "favicons/"
 customCss = []
 customJs = []
-mainSections = ["post","emotion"]
+mainSections = ["tech","emotion"]
 images = ["images/site-feature-image.png"]
 # Google Site Verification
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -72,8 +72,8 @@ url = "mailto:2552712328@qq.com"
   [[menu.main]]
   name = "学习"
   weight = 30
-  identifier = "posts"
-  url = "/post/"
+  identifier = "tech"
+  url = "/tech/"
 
   [[menu.main]]
   name = "其他"
