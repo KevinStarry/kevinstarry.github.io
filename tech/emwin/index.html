@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> KevinStarry | Emwin </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="心念所往之，则万千无惧">
+    
+    <link rel="stylesheet"
+          href="https://kevinstarry.github.io/css/style.min.ae4af30f6a89627b05def70e914c14cbb53a71d28a88ec8d87a40ecc7c2778e2.css"
+          integrity="sha256-rkrzD2qJYnsF3vcOkUwUy7U6cdKKiOyNh6QOzHwneOI="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://kevinstarry.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kevinstarry.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kevinstarry.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kevinstarry.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://kevinstarry.github.io/tech/emwin/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://kevinstarry.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kevinstarry.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Emwin"/>
+<meta name="twitter:description" content="GUI工具说明 emwin有自己的的GUI"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://kevinstarry.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">悠然时光，愿爱长存</a></h3>
+            <div class="description">
+                <p>心念所往之，则万千无惧</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/kevinstarry" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:2552712328@qq.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; KevinStarry 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">首页</a></li>
+        
+            
+            <li><a 
+                   href="/emotion/"
+                        
+                   title="">情感</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">学习</a></li>
+        
+            
+            <li><a 
+                   href="/other/"
+                        
+                   title="">其他</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Emwin</h3>
+                
+            </div>
+
+            <h1 id="gui工具说明">GUI工具说明</h1>
+<p>emwin有自己的的GUI设计工具，uCGUIBuilder是基于emwin开发的，使用uCGUIBuilder即可。</p>
+<h1 id="快速上手">快速上手</h1>
+<p>官网下载emwin，如SeggerEval_WIN32_MSVC_MinGW_GUI_V616，压缩包里的文件解压后找到后缀.sln的文件，直接运行（VisualStudio)就会加载项目，这个时候可以看到项目中有很多文件，直接在VisualStudio中点击本地Windows调试，就会出现官方的显示界面，此时说明基本不存在缺少文件的问题，可以安心使用了。</p>
+<p>为什么直接运行Windows调试就会有结果呢？因为在工程项目Application文件夹下有一个GUIDEMO_Start.c文件，这个文件含有入口函数。</p>
+<p>使用uCGUIBuilder图形化界面设计布局，应该很容易就能上手，随便绘制一个界面，添加点控件，然后保存。随后使用VisualStudio将文件保存到某个位置。正常会输出三个文件。将其中的.c文件直接复制到VisualStudio中的emwin项目下，然后从项目中删除GUIDEMO_Start.c文件，本地Windows调试就可以看到刚刚设计的界面。当然，也许有些细节问题，不过这不重要，因为整个流程已经走完了。细节的问题，自然是要深入去理解。</p>
+<h1 id="gui比对">GUI比对</h1>
+<p>对于初学者来说，emwin官方提供的GUIBuilder.exe和uCGUIBuilder.exe设计产生的.c文件是有些区别的，官方GUIBuilder设计产生的.c文件不能直接在项目中运行，需要进行一些操作。</p>
+<h1 id="版本问题">版本问题</h1>
+<p>不同的emwin版本对应的Visual Studio版本不一样，并非越新的越好，入门遇见这种问题可能会不知所以然。</p>
+<h1 id="ucguibuilder设计的空界面代码浅析">uCGUIBuilder设计的空界面代码浅析</h1>
+<p>以下所有分析均为个人理解，不代表正确观点，可能有很多错误</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stddef.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;GUI.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;DIALOG.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;WM.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;BUTTON.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;CHECKBOX.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;DROPDOWN.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;EDIT.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;FRAMEWIN.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;LISTBOX.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;MULTIEDIT.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;RADIO.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;SLIDER.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;TEXT.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;PROGBAR.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;SCROLLBAR.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;LISTVIEW.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> GUI_WIDGET_CREATE_INFO _aDialogCreate[] <span style="color:#f92672">=</span> {
+    { FRAMEWIN_CreateIndirect,  <span style="color:#e6db74">&#34;Caption&#34;</span>,           <span style="color:#ae81ff">0</span>,                       <span style="color:#ae81ff">0</span>,  <span style="color:#ae81ff">0</span>,  <span style="color:#ae81ff">320</span>,<span style="color:#ae81ff">240</span>,FRAMEWIN_CF_MOVEABLE,<span style="color:#ae81ff">0</span>}
+};
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">PaintDialog</span>(WM_MESSAGE <span style="color:#f92672">*</span> pMsg)
+{
+    WM_HWIN hWin <span style="color:#f92672">=</span> pMsg<span style="color:#f92672">-&gt;</span>hWin;
+
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">InitDialog</span>(WM_MESSAGE <span style="color:#f92672">*</span> pMsg)
+{
+    WM_HWIN hWin <span style="color:#f92672">=</span> pMsg<span style="color:#f92672">-&gt;</span>hWin;
+    <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//FRAMEWIN
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>    FRAMEWIN_AddCloseButton(hWin, FRAMEWIN_BUTTON_RIGHT, <span style="color:#ae81ff">0</span>);
+    FRAMEWIN_AddMaxButton(hWin, FRAMEWIN_BUTTON_RIGHT, <span style="color:#ae81ff">1</span>);
+    FRAMEWIN_AddMinButton(hWin, FRAMEWIN_BUTTON_RIGHT, <span style="color:#ae81ff">2</span>);
+
+}
+
+<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">_cbCallback</span>(WM_MESSAGE <span style="color:#f92672">*</span> pMsg) 
+{
+    <span style="color:#66d9ef">int</span> NCode, Id;
+    WM_HWIN hWin <span style="color:#f92672">=</span> pMsg<span style="color:#f92672">-&gt;</span>hWin;
+    <span style="color:#66d9ef">switch</span> (pMsg<span style="color:#f92672">-&gt;</span>MsgId) 
+    {
+        <span style="color:#66d9ef">case</span> WM_PAINT:
+            PaintDialog(pMsg);
+            <span style="color:#66d9ef">break</span>;
+        <span style="color:#66d9ef">case</span> WM_INIT_DIALOG:
+            InitDialog(pMsg);
+            <span style="color:#66d9ef">break</span>;
+        <span style="color:#66d9ef">case</span> WM_KEY:
+            <span style="color:#66d9ef">switch</span> (((WM_KEY_INFO<span style="color:#f92672">*</span>)(pMsg<span style="color:#f92672">-&gt;</span>Data.p))<span style="color:#f92672">-&gt;</span>Key) 
+            {
+                <span style="color:#66d9ef">case</span> GUI_KEY_ESCAPE:
+                    GUI_EndDialog(hWin, <span style="color:#ae81ff">1</span>);
+                    <span style="color:#66d9ef">break</span>;
+                <span style="color:#66d9ef">case</span> GUI_KEY_ENTER:
+                    GUI_EndDialog(hWin, <span style="color:#ae81ff">0</span>);
+                    <span style="color:#66d9ef">break</span>;
+            }
+            <span style="color:#66d9ef">break</span>;
+        <span style="color:#66d9ef">case</span> WM_NOTIFY_PARENT:
+            Id <span style="color:#f92672">=</span> WM_GetId(pMsg<span style="color:#f92672">-&gt;</span>hWinSrc); 
+            NCode <span style="color:#f92672">=</span> pMsg<span style="color:#f92672">-&gt;</span>Data.v;        
+            <span style="color:#66d9ef">switch</span> (Id) 
+            {
+                <span style="color:#66d9ef">case</span> GUI_ID_OK:
+                    <span style="color:#66d9ef">if</span>(NCode<span style="color:#f92672">==</span>WM_NOTIFICATION_RELEASED)
+                        GUI_EndDialog(hWin, <span style="color:#ae81ff">0</span>);
+                    <span style="color:#66d9ef">break</span>;
+                <span style="color:#66d9ef">case</span> GUI_ID_CANCEL:
+                    <span style="color:#66d9ef">if</span>(NCode<span style="color:#f92672">==</span>WM_NOTIFICATION_RELEASED)
+                        GUI_EndDialog(hWin, <span style="color:#ae81ff">0</span>);
+                    <span style="color:#66d9ef">break</span>;
+
+            }
+            <span style="color:#66d9ef">break</span>;
+        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+            WM_DefaultProc(pMsg);
+    }
+}
+
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">MainTask</span>(<span style="color:#66d9ef">void</span>) 
+{ 
+    GUI_Init();
+    WM_SetDesktopColor(GUI_WHITE);      <span style="color:#75715e">/* Automacally update desktop window */</span>
+    WM_SetCreateFlags(WM_CF_MEMDEV);  <span style="color:#75715e">/* Use memory devices on all windows to avoid flicker */</span>
+    <span style="color:#75715e">//PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//FRAMEWIN_SetDefaultSkin(FRAMEWIN_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//BUTTON_SetDefaultSkin(BUTTON_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//CHECKBOX_SetDefaultSkin(CHECKBOX_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//DROPDOWN_SetDefaultSkin(DROPDOWN_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//SCROLLBAR_SetDefaultSkin(SCROLLBAR_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//HEADER_SetDefaultSkin(HEADER_SKIN_FLEX);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
+	{
+        GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), <span style="color:#f92672">&amp;</span>_cbCallback, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+	}
+}
+
+</code></pre></div><p>说明：删除了多余的注释文字，这是使用uCGUIBuilder.exe新建的一个空窗体的代码</p>
+<h2 id="分析">分析</h2>
+<p>对于C语言，我们首先看主函数，末尾的MainTask()函数就是整个项目的入口函数，如果之前有看过GUIDEMO_Start.c文件，就可以发现，里面也有一个MainTask().</p>
+<p>MainTask函数中GUI_Init()，望文生义即初始化。下面的一堆代码，包含注释的代码都可以删掉，最精简的MainTask()可以只留GUI_Init,和while里面的循环体。while中的GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &amp;_cbCallback, 0, 0, 0);最重要的地方在于回调函数_cbCallback。</p>
+<p>先看_aDialogCreate，这个在最前面，可以看到里面有FRAMEWIN_CreateIndirect,这个表示的是一个框架，如果想创建一个空白的界面那么应该使用Window_CreateIndirect,后面的具体参数查参考手册，大概是这样的<code>Window_CreateIndirect,  &quot;Caption&quot;,0, 0,  0,  320,240, 0 ,0 ,0</code> ，这里要注意，在InitDialog函数中，还有FRAMEWIN的三个按钮控件，如果使用Window_CreateIndirect, 请删除InitDialog中的相关控件。320，240表示的是窗口的宽高。</p>
+<p>仿真器的宽高参数在项目Config文件夹中的LCDconf.c中，找到<code>#define XSIZE_PHYS  240 #define YSIZE_PHYS  320 </code>修改即可。</p>
+<p>如果使用uCGUIBuilder创建的控件，如Text，Button等，则在_aDialogCreate中会出现TEXT_CreateIndirect，BUTTON_CreateIndirect等代码。</p>
+<p>从上往下看，PaintDialog，这个函数里字面理解就是绘制类的代码了，2D绘图，矩形框，圆形，多边形，等等。</p>
+<p>InitDialog函数中，写一些基本的初始化控件。</p>
+<p>最后看回调函数，_cbCallback，之里面只需要关注上面出现的函数，在WM_PAINT,WM_INIT_DIALOG,中出现了上面的两个函数，也就是说，其实里面的内容是可以直接在这里面写的，但是以函数的方式写更易于阅读，便于理解。</p>
+<p>整个文件除了MainTask,和回调函数，以及_aDialogCreate，其他的是都可以删除的。</p>
+<h2 id="改进">改进</h2>
+<p>实际中我们自己的代码可以都在PaintDialog中写，比如文本的创建，查API手册我们可以找到</p>
+<pre><code>原型
+TEXT_Handle TEXT_CreateEx(int x0, int y0,
+ int xsize, int ysize,
+ WM_HWIN hParent, int WinFlags,
+ int ExFlags, int Id,
+ const char * pText);
+</code></pre><p>怎么理解这段代码呢？后面的许多控件都有类似的表达，例如按钮是BUTTON_Handle.编辑框是EDIT_Handle.这个是用来创建句柄的，和后面的函数相关，例如我需要对某个文本框调整颜色，调整字体，调整位置，怎么做呢？查API手册会得到
+<code>void TEXT_SetFont(TEXT_Handle hObj, const GUI_FONT * pFont); void TEXT_SetText(TEXT_Handle hObj, const char * s); </code>
+这些都该怎么用呢？这里其实是有两套体系的。直接使用uCGUIBuilder.exe设计好布局，然后看代码，就会明白，这里就不多做说明。
+在PaintDialog函数中有WM_HWIN hWin = pMsg - &gt; hWin;这段代码的意思因当时指针指向当前窗口，在下面写我们要写的代码。</p>
+<p>如我想创建一个文本框，然后设置字体。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">TEXT_Handle hText1;
+hText1 <span style="color:#f92672">=</span> TEXT_CreateEx(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">120</span>,<span style="color:#ae81ff">30</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">0</span>,WM_CF_SHOW,TEXT_CF_HCENTER<span style="color:#f92672">|</span>TEXT_CF_VCENTER,GUI_ID_TEXT1, <span style="color:#e6db74">&#34;文本框1&#34;</span>);
+<span style="color:#75715e">//事实上，我们在创建TEXT_CreateEx时候已经对文本进行了位置调整，和设置文本框文字
+</span><span style="color:#75715e"></span>TEXT_SetFont(hText1,<span style="color:#f92672">&amp;</span>GUI_Font8_1);
+<span style="color:#75715e">//hText1 就是我们创建的ID为GUI_ID_TEXT1文本框的句柄，当然也可通过窗口函数，以及ID获取句柄，不过没有必要。
+</span></code></pre></div><p>对于一个新手来说，直接在PaintDialog函数中写就好了，当然，不喜欢这个函数名自己改就是了，在回调函数中修改为你改后的名字就好了。</p>
+<h1 id="番外">番外</h1>
+<p>很多时候，有些函数即使我们设置了，但是并不一定会生效，例如设置窗口背景色，设置button颜色。这些有各种各样的原因，需要自行搜索获取答案，也有些答案是找不到的。这种时候，除了看官方的API手册就只能请教他人或者自行理解了。</p>
+<p>在项目工程文件中有一个Sample文件夹，里面有一个Tutorial文件夹，里面有非常多的官方例程源码，只需鼠标右键点击教程文件中的某个.c文件，找到属性，在Visul Studio弹出的对话框中，找到常规，找到从生成项目中排除，选择否。然后运行就可以观看官方例程的效果图。这里注意整个项目只能有一个MainTask函数，换句话说，如果之前自己写的MainTask需要暂时从项目中排除，才可以展示官方代码效果。</p>
+<h1 id="提高">提高</h1>
+<ol>
+<li>字体的导入以及使用，字体抗锯齿处理</li>
+<li>图片的导入以及使用</li>
+<li>2D绘制各种图形</li>
+<li>官方附带Tool文件夹中含有各种工具，有不同的用途</li>
+</ol>
+<h1 id="参考">参考</h1>
+<p>安富莱5.4.2教程，里面不仅仅有API手册参考，还告诉你很多东西怎么去使用。</p>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://kevinstarry.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

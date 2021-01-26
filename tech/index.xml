@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://kevinstarry.github.io/</link>
-    <description>Recent content on </description>
+    <title>Teches on </title>
+    <link>https://kevinstarry.github.io/tech/</link>
+    <description>Recent content in Teches on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 Jan 2021 22:39:09 +0800</lastBuildDate><atom:link href="https://kevinstarry.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 22:39:09 +0800</lastBuildDate><atom:link href="https://kevinstarry.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emwin</title>
       <link>https://kevinstarry.github.io/tech/emwin/</link>
@@ -14,33 +14,6 @@
       
       <guid>https://kevinstarry.github.io/tech/emwin/</guid>
       <description>GUI工具说明 emwin有自己的的GUI</description>
-    </item>
-    
-    <item>
-      <title>记录句子</title>
-      <link>https://kevinstarry.github.io/emotion/%E8%AE%B0%E5%BD%95%E5%8F%A5%E5%AD%90/</link>
-      <pubDate>Sat, 23 Jan 2021 18:01:44 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E8%AE%B0%E5%BD%95%E5%8F%A5%E5%AD%90/</guid>
-      <description>是的，我的互联网不是——全是骗子的百度、</description>
-    </item>
-    
-    <item>
-      <title>为什么我坚定不移地抵制百度</title>
-      <link>https://kevinstarry.github.io/emotion/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%9D%9A%E5%AE%9A%E4%B8%8D%E7%A7%BB%E5%9C%B0%E6%8A%B5%E5%88%B6%E7%99%BE%E5%BA%A6/</link>
-      <pubDate>Sat, 23 Jan 2021 17:57:51 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%9D%9A%E5%AE%9A%E4%B8%8D%E7%A7%BB%E5%9C%B0%E6%8A%B5%E5%88%B6%E7%99%BE%E5%BA%A6/</guid>
-      <description>转载自互联网 我有不少在百度工作的朋友，但</description>
-    </item>
-    
-    <item>
-      <title>与人</title>
-      <link>https://kevinstarry.github.io/emotion/%E4%B8%8E%E4%BA%BA/</link>
-      <pubDate>Sat, 23 Jan 2021 17:53:33 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E4%B8%8E%E4%BA%BA/</guid>
-      <description>在打开TIM聊天对话框的那一刻，敲了几行</description>
     </item>
     
     <item>
@@ -53,48 +26,12 @@
     </item>
     
     <item>
-      <title>一束光</title>
-      <link>https://kevinstarry.github.io/emotion/%E4%B8%80%E6%9D%9F%E5%85%89/</link>
-      <pubDate>Wed, 20 Jan 2021 21:31:38 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E4%B8%80%E6%9D%9F%E5%85%89/</guid>
-      <description>街道两旁，树荫稀疏。抬着头，看着天空，心</description>
-    </item>
-    
-    <item>
-      <title>初识职场</title>
-      <link>https://kevinstarry.github.io/emotion/%E5%88%9D%E8%AF%86%E8%81%8C%E5%9C%BA/</link>
-      <pubDate>Tue, 12 Jan 2021 21:54:11 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E5%88%9D%E8%AF%86%E8%81%8C%E5%9C%BA/</guid>
-      <description>不知道哪里来的勇气，一个人独自前往一个举</description>
-    </item>
-    
-    <item>
       <title>LNMP手动配置</title>
       <link>https://kevinstarry.github.io/tech/lnmp%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 31 Dec 2020 14:40:32 +0800</pubDate>
       
       <guid>https://kevinstarry.github.io/tech/lnmp%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>lsb_release -a 查看当前Linux系统版本信息lsb</description>
-    </item>
-    
-    <item>
-      <title>读书笔记</title>
-      <link>https://kevinstarry.github.io/emotion/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sat, 26 Dec 2020 13:34:15 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>嵌入式Linux与物联网软件开发——C语</description>
-    </item>
-    
-    <item>
-      <title>穿越时光的面条</title>
-      <link>https://kevinstarry.github.io/emotion/%E7%A9%BF%E8%B6%8A%E6%97%B6%E5%85%89%E7%9A%84%E9%9D%A2%E6%9D%A1/</link>
-      <pubDate>Fri, 25 Dec 2020 16:45:37 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E7%A9%BF%E8%B6%8A%E6%97%B6%E5%85%89%E7%9A%84%E9%9D%A2%E6%9D%A1/</guid>
-      <description>任何与自身相关的事物一旦经过时光的沉淀便</description>
     </item>
     
     <item>
@@ -134,39 +71,12 @@
     </item>
     
     <item>
-      <title>浅吟低唱</title>
-      <link>https://kevinstarry.github.io/emotion/%E6%B5%85%E5%90%9F%E4%BD%8E%E5%94%B1/</link>
-      <pubDate>Tue, 08 Dec 2020 20:55:36 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E6%B5%85%E5%90%9F%E4%BD%8E%E5%94%B1/</guid>
-      <description>览万千文章，总有那么一两句能让你怦然心动</description>
-    </item>
-    
-    <item>
       <title>Nginx反向代理</title>
       <link>https://kevinstarry.github.io/tech/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
       <pubDate>Mon, 30 Nov 2020 16:23:52 +0800</pubDate>
       
       <guid>https://kevinstarry.github.io/tech/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
       <description>Nginx是一款面向性能设计的HTTP服</description>
-    </item>
-    
-    <item>
-      <title>那些音乐和时光</title>
-      <link>https://kevinstarry.github.io/emotion/%E9%82%A3%E4%BA%9B%E9%9F%B3%E4%B9%90%E5%92%8C%E6%97%B6%E5%85%89/</link>
-      <pubDate>Mon, 30 Nov 2020 11:30:41 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E9%82%A3%E4%BA%9B%E9%9F%B3%E4%B9%90%E5%92%8C%E6%97%B6%E5%85%89/</guid>
-      <description>&lt;p&gt;喜欢是一个现在进行时，随着时间的变迁也会产生微妙的变化&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>折腾让时光更有价值</title>
-      <link>https://kevinstarry.github.io/emotion/%E6%8A%98%E8%85%BE%E8%AE%A9%E6%97%B6%E5%85%89%E6%9B%B4%E6%9C%89%E4%BB%B7%E5%80%BC/</link>
-      <pubDate>Sun, 29 Nov 2020 21:03:57 +0800</pubDate>
-      
-      <guid>https://kevinstarry.github.io/emotion/%E6%8A%98%E8%85%BE%E8%AE%A9%E6%97%B6%E5%85%89%E6%9B%B4%E6%9C%89%E4%BB%B7%E5%80%BC/</guid>
-      <description>&lt;p&gt;如果说一开始只是停留于表面的git命令的话&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -212,15 +122,6 @@
       
       <guid>https://kevinstarry.github.io/tech/hugo/</guid>
       <description>&lt;p&gt;极客精神大概就是一种折腾吧，之前使用Hexo搭建的网站，总觉得使用node.js显得十分麻烦，兜兜转转发现了Hugo。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kevinstarry.github.io/other/</link>
-      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kevinstarry.github.io/other/</guid>
-      <description>悠然时光，愿爱长存 在这个互联网孤岛相遇，</description>
     </item>
     
   </channel>
