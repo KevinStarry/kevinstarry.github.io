@@ -11,7 +11,7 @@ author = "Hugo Authors"
 
 Windows10_Hugo_资源：<https://wws.lanzous.com/b01tr1nyb>    
 WordPress5.6源码(.tar.gz [tar -xzvf]) <https://kevinstarry.lanzous.com/b01tu58ih>   
-
+emwin资源 <https://kevinstarry.lanzous.com/b01tx97oj> 密码:0000
 
 遇见你的第一天，上帝就在我耳边悄悄说了四个字：在劫难逃
 
