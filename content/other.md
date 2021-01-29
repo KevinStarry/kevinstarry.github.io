@@ -21,7 +21,9 @@ emwin资源 <https://kevinstarry.lanzous.com/b01tx97oj> 密码:0000
 
 2021.1.10+  v2ray脚本折腾一下午，原因：yum or apt -y update && yum or upgrade -y，都是泪
 
-20201.1.20  心 动
+2021.1.20  心 动
+
+2021.1.30± 渐渐变得放纵，没有照顾好自己，熬夜，加班，点外卖，喝可乐，迷失中
 
 
 
